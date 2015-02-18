@@ -1,0 +1,22 @@
+{
+    "name": "turanct/omikron",
+    "description": "Simple, functional programming style test framework",
+    "type": "application",
+    "homepage": "http://github.com/turanct/omikron",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toon Daelman",
+            "email": "spinnewebber_toon@hotmail.com",
+            "homepage": "http://turanct.wordpress.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/omikron.php",
+            "src/input.php",
+            "src/output.php"
+        ]
+    }
+}
