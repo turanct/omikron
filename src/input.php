@@ -7,7 +7,7 @@ function getDirectoriesFromArgv(array $argv)
     return array_filter(
         array_map(
             function($dir) {
-                if (in_array($dir, ['.', '/', '..'])) {
+                if (in_array($dir, ['.', '/', '..']) || realpath($dir) === false) {
                     return false;
                 }
 
