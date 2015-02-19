@@ -12,6 +12,7 @@
             "role": "Developer"
         }
     ],
+    "bin": ["bin/omikron"],
     "autoload": {
         "files": [
             "src/omikron.php",
