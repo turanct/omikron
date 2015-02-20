@@ -45,7 +45,7 @@ This is an example of a topic. It's in a file named `topics/topic-calculus.php`.
 To run the tests for this topic, we'll just run `bin/omikron topics` (as `topics` is the directory with my topics). The output will be something like this:
 
 ```sh
-$ ./bin/omikron topics
+$ bin/omikron topics
 topics: 1
 features: 2
 assertions: 3
