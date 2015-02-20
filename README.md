@@ -9,7 +9,18 @@ This project was started as a reaction to [this issue](https://github.com/mathia
 Usage
 -----------------------------
 
-Using it is easy, just require `turanct/omikron` as a development dependency in your `composer.json` file, and configure a `bin-dir`. The omikron executable will be available in your bin directory.
+Installing it is easy, just require `turanct/omikron` as a development dependency in your `composer.json` file, and configure a `bin-dir`. The omikron executable will be available in your bin directory when you've run `composer install`.
+
+```json
+{
+    "require-dev": {
+        "turanct/omikron": "dev-master"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
+```
 
 Omikron has a concept of topics, topics are distinct parts of your code under test. These topics have different features, and to describe those features, there are assertions.
 
