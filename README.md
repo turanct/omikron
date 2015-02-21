@@ -56,6 +56,16 @@ FAILED: calculus: addition adds two numbers
 ```
 
 
+Tests
+-----------------------------
+
+Omikron has unit tests, located in the `tests` directory. These tests are written using Omikron itself, so you can just run the Omikron executable on the tests dir, no external dependencies needed.
+
+```sh
+$ bin/omikron tests
+```
+
+
 Contributing
 -----------------------------
 
