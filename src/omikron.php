@@ -74,7 +74,10 @@ function testResults(array $topics)
 {
     return function($message = '') use ($topics) {
         if ($message === 'numberOfTopics') {
-            return count($topics);
+            return count(array_unique(array_map(
+                function($topic) { return $topic('getName'); },
+                $topics
+            )));
         } elseif ($message === 'numberOfFeatures') {
             return array_reduce(
                 $topics,
