@@ -31,13 +31,17 @@ Omikron has a concept of topics, topics are distinct parts of your code under te
 
 return within("calculus",
     describe("addition",
-        it("adds two numbers", function() {
-            return 1 + 1 == 3; // Will return false => failing test
+        it("adds two numbers", function() { return
+            expect(1 + 1, toBe(3)); // Will return false => failing test
         }),
-        it("adds three numbers", function() { return 1 + 1 + 1 == 3; })
+        it("adds three numbers", function() { return
+            expect(1 + 1 + 1, toBe(3));
+        })
     ),
     describe("subtraction",
-        it("subtracts two numbers", function() { return 3 - 2 == 1; })
+        it("subtracts two numbers", function() { return
+            expect(3 - 2, toBe(1));
+        })
     )
 );
 ```
@@ -53,6 +57,7 @@ features: 2
 assertions: 3
 
 FAILED: calculus: addition adds two numbers
+Expected 2 to be 3
 ```
 
 
