@@ -13,6 +13,9 @@
         }
     ],
     "bin": ["bin/omikron"],
+    "require": {
+        "sebastian/diff": "~1.2.0"
+    },
     "autoload": {
         "files": [
             "src/assertion.php",

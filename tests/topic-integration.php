@@ -8,11 +8,23 @@ features: 2
 assertions: 5
 
 FAILED: calculus: addition adds two numbers
-Expected 2 to be 3
+Expected values to be equal, instead got:
+--- Actual
++++ Expected
+@@ @@
+-2
++3
+
 FAILED: calculus: addition is difficult
-Expected 6 to be 33
+Expected values to be equal, instead got:
+--- Actual
++++ Expected
+@@ @@
+-6
++33
+
 FAILED: calculus: subtraction looks strange
-Expected 1 to be false.
+Expected value to be false
 
 OUTPUT;
 
