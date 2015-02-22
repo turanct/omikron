@@ -1,6 +1,6 @@
 <?php
 
-function expect($value, $predicate) {
+function expect($value, callable $predicate) {
     return $predicate($value);
 }
 
