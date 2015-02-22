@@ -8,8 +8,11 @@ features: 2
 assertions: 5
 
 FAILED: calculus: addition adds two numbers
+Expected 2 to be 3
 FAILED: calculus: addition is difficult
+Expected 6 to be 33
 FAILED: calculus: subtraction looks strange
+Expected 1 to be false.
 
 OUTPUT;
 
