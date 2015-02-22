@@ -1,7 +1,7 @@
 Omikron Test Framework
 =============================
 
-![Travis CI](https://api.travis-ci.org/turanct/omikron.svg?branch=master)
+[![Travis CI](https://api.travis-ci.org/turanct/omikron.svg?branch=master)](https://travis-ci.org/turanct/omikron)
 
 A simple, functional programming inspired, test framework.
 
