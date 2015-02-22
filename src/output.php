@@ -3,7 +3,7 @@
 function displayTestResults($testResults)
 {
     echo renderOutput($testResults);
-    return (count($testResults->failedAssertions)) ? 1 : 0;
+    return count($testResults->failedAssertions) ? 1 : 0;
 }
 
 function renderOutput($testResults)

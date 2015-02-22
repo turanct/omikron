@@ -47,9 +47,11 @@ function describe($feature, ...$assertions)
 
 function it($doesThis, callable $correctly)
 {
+    $outcome = $correctly();
+
     return (object)[
-        'assert' => (bool)$correctly(),
-        'description' => (string)$doesThis
+        'assert' => true === $outcome,
+        'description' => (string)$doesThis . (true !== $outcome ? PHP_EOL . $outcome : '')
     ];
 }
 

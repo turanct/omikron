@@ -15,6 +15,7 @@
     "bin": ["bin/omikron"],
     "autoload": {
         "files": [
+            "src/assertion.php",
             "src/omikron.php",
             "src/input.php",
             "src/output.php"
