@@ -64,7 +64,7 @@ Expected 2 to be 3
 Tests
 -----------------------------
 
-Omikron has unit tests, located in the `tests` directory. These tests are written using Omikron itself, so you can just run the Omikron executable on the tests dir, no external dependencies needed.
+Omikron has unit tests, located in the `tests` directory. These tests are written using Omikron itself, so you can just run the Omikron executable on the tests dir!
 
 ```sh
 $ bin/omikron tests
