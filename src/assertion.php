@@ -6,6 +6,21 @@ function expect($value, callable $predicate) {
     return $predicate($value);
 }
 
+function expectToThrow(callable $expression, $exception = null) {
+    try {
+        $expression();
+    } catch (Exception $e) {
+        if (
+            ($exception !== null && $e instanceof $exception)
+            || $exception === null
+        ) {
+            return true;
+        }
+    }
+
+    return "Expected " . ($exception ?: 'Exception') . " to be thrown\n";
+}
+
 function diff($actual, $expected) {
     // workaround for bug in differ https://github.com/sebastianbergmann/diff/issues/25
     $actual = is_scalar($actual) ? (string) $actual : $actual;
