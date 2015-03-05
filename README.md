@@ -27,9 +27,9 @@ Installing it is easy, just require `turanct/omikron` as a development dependenc
 Omikron has a concept of topics, topics are distinct parts of your code under test. These topics have different features, and to describe those features, there are assertions.
 
 ```php
-<?php
+<?php return
 
-return within("calculus",
+within("calculus",
     describe("addition",
         it("adds two numbers", function() { return
             expect(1 + 1, toBe(3)); // Will return false => failing test
