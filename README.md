@@ -5,6 +5,8 @@ Omikron Test Framework
 
 A simple, functional programming inspired, test framework.
 
+![Ouroboros, the greek dragon eating its own tail](docs/omikron.png)
+
 This project was started as a reaction to [this issue](https://github.com/mathiasverraes/lambdalicious/issues/22) and was initially [a gist](https://gist.github.com/turanct/129a6ed97ec3543ebafd). It's currently *not meant to be used in production*, but there's nobody stopping you if you want to.
 
 
