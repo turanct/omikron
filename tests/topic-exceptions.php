@@ -33,6 +33,7 @@ Call stack:
 #7 {main}
 
 OUTPUT;
+$expectedOutput = str_replace('/vagrant', dirname(__DIR__), $expectedOutput);
 
 return within("omikron",
     describe("assertion",
