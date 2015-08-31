@@ -47,7 +47,13 @@ function describe($feature, ...$assertions)
 
 function it($doesThis, callable $correctly)
 {
-    $outcome = $correctly();
+    try {
+        $outcome = $correctly();
+    } catch (Exception $e) {
+        $outcome = PHP_EOL . 'Exception: ' . $e->getMessage();
+        $outcome .= ' in ' . $e->getFile() . ' on line ' . $e->getLine() . PHP_EOL;
+        $outcome .= PHP_EOL . 'Call stack:' . PHP_EOL . $e->getTraceAsString();
+    }
 
     return (object)[
         'assert' => true === $outcome,
